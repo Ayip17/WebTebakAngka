@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tebak Angka</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>Tebak Angka</h1>
-        <p>Masukkan angka antara 1 dan 100:</p>
-        <input type="number" id="guess" min="1" max="100" placeholder="Tebakan kamu..." maxlength="3">
-        <button onclick="checkGuess()">Tebak</button>
-        <button id="resetBtn" onclick="resetGame()" style="display: none;">Reset</button>
-        <p id="result"></p>
+      <h1>Tebak Angka</h1>
+      <p>Masukkan angka antara 1 dan 100:</p>
+      <input
+        type="number"
+        id="guess"
+        min="1"
+        max="100"
+        placeholder="Tebakan kamu..."
+        maxlength="3"
+      />
+      <button id="tebakBtn">Tebak</button>
+      <button id="resetBtn" style="display: none">Reset</button>
+      <p id="result"></p>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
