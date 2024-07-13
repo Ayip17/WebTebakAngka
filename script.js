@@ -1,5 +1,6 @@
 let targetNumber = Math.floor(Math.random() * 100) + 1;
 
+document.getElementById("tebakBtn").addEventListener("click", checkGuess);
 document.getElementById("guess").addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
     checkGuess();
